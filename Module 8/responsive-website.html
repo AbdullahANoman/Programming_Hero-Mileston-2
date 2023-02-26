@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website </title>
+    <style>
+    body{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+        .split-flex{
+            display: flex;
+            
+            border: 1px solid red;
+        }
+        .split-flex img{
+            width: 50%;
+        }
+        .split-flex p{
+            width: 50%;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 2px solid blue;
+            border-radius: 5px;
+            padding: 10px;
+
+        }
+        .food img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px) {
+            .split-flex{
+                flex-direction: column;
+            }
+            .split-flex p,img{
+                width: 100%;
+            }
+            .split-flex img{
+                width: 100%;
+            }
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:700px){
+            .split-flex{
+                flex-direction: column;
+            }
+            .split-flex p{
+                width: 100%;
+            }
+            .split-flex img{
+                width: 100%;
+            }
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 1.Viewport Meta Tag 
+        2. CSS Relative Unit
+        3.Responsive Image Fluid Image
+        4.Body Max-width and margin auto
+        5.Responsive split screen with flex
+        6.Grid Responsive Multi Column
+        7.Responsive Menu (Bootstrap responsive )-- future
+    -->
+
+    <div class="split-flex">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet odit, impedit placeat dolor consequatur exercitationem quia voluptas repellat quis autem sequi quas sit. Ea, saepe?</p>
+        <img src="images/tiger.jpg" alt="">
+    </div>
+
+    <!-- .container>.food>img[src="images/food.jpg"]+h2{item-$}+p{lorem20}+button{Order Now}  -->
+    <div class="container">
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores illo fugit animi reiciendis obcaecati odit soluta in modi commodi!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus natus tempora illum id assumenda perspiciatis, obcaecati cum hic corrupti corporis!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat praesentium totam corporis corrupti inventore quae nobis cumque porro neque ipsa!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est blanditiis velit voluptates at vel ipsum nihil labore nam quis?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-5</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum numquam amet quidem ratione obcaecati sint pariatur qui mollitia non.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore quam nemo cupiditate neque a! Saepe, vel? Accusamus, repudiandae odio?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-7</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore harum culpa quo debitis itaque quaerat, provident mollitia maxime dolores a?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-8</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nam ratione optio quaerat necessitatibus similique nesciunt unde recusandae eum? Ex.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-9</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at labore quae, amet impedit explicabo id sint adipisci laboriosam aperiam.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-10</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam voluptas quaerat et? A perspiciatis quidem deserunt totam repellendus vero?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-11</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nesciunt ducimus a non maxime minus. Consequatur consequuntur perferendis amet dolor!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-12</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sequi soluta id fugit. Nemo recusandae illo doloremque distinctio optio? Commodi!</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+</body>
+</html>

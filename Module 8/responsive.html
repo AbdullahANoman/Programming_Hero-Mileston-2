@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+    .food img{
+        width: 40%;
+        border-radius: 90%;
+    }
+    .food{
+        height: 500px;
+        border:5px solid aqua;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    /* layout design  */
+
+    @media screen and (max-width:576px) {
+            .container {
+                grid-template-columns: repeat(1,1fr);
+            }
+    }
+    @media screen and (min-width:577px) and (max-width:1400px) {
+         .container{
+            grid-template-columns: repeat(2,1fr);
+         }
+    }
+    /* layout design end  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti cumque tenetur commodi eum quisquam labore eveniet, eaque illum quas.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est necessitatibus ducimus neque tempore odit quisquam voluptatem ex consequuntur nisi accusantium.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil ipsa ducimus! Dolore delectus eveniet blanditiis adipisci, molestias beatae tempore?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ex optio repudiandae eum ipsa nam ratione sequi assumenda impedit atque.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero, exercitationem ad architecto dolore rerum nostrum natus porro eaque tempora!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab omnis culpa at quisquam, facere voluptate perspiciatis. Ab, vel atque. Sed?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-7</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore error nesciunt qui molestias corporis adipisci mollitia, eos sint repellendus provident.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-8</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nihil provident nulla quis. Rem omnis beatae ea nesciunt officia incidunt?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-9</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium exercitationem optio ratione corrupti corporis recusandae laboriosam quisquam sunt facilis harum.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-10</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, facilis facere quo a adipisci illo cupiditate ducimus laudantium! Recusandae, libero!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-11</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quaerat nihil quas illum veniam? Rem perspiciatis quasi officiis asperiores modi.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-12</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias dolorum dolorem saepe illo cum reiciendis facilis libero laudantium odit.</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+</body>
+</html>

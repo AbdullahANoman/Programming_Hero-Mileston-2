@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            margin-right: 30px;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+            color: blueviolet;
+        }
+        .login-container{
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            width: 10%;
+        }
+        .login-container input {
+            padding:5px 5px;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .login-boos{
+            display: flex;
+            justify-content: center;
+            height: 1000px;
+            align-items: center;
+        }
+        .button-1{
+            background-color: coral;
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span><a href="">Home</a><a href="">Inventory</a><a href="">Tutorials</a></span>
+            <span><a href="">Logout</a><a href="">Sign Up</a></span>
+        </nav>
+    </header>
+    <div class="login-boos">
+        <section class="login-container">
+            <h4>Please Login</h4>
+            <input type="email" name="" id="" placeholder="Your email">
+            <input type="password" name="" id="" placeholder="Password">
+            <input type="submit" value="Login" class="button-1">
+        </section>
+    </div>
+</body>
+</html>

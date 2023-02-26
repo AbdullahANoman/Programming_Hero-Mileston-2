@@ -1,0 +1,70 @@
+:root{
+    --border: 5px solid black;
+}
+*{
+    margin: 0;
+}
+.header{
+    grid-area: h;
+    border: var(--border);
+}
+.footer{
+    grid-area: f;
+    border: var(--border);
+}
+.main{
+    grid-area: m;
+    border: var(--border);
+}
+.nav{
+    grid-area: n;
+    border: var(--border);
+}
+.aside{
+    grid-area: as;
+    border: var(--border);
+}
+.ad{
+    grid-area: ad;
+    border: var(--border);
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "h h h h h"
+    "n m m m as"
+    "n m m m ad"
+    "f f f f f"
+    ;
+ 
+}
+@media screen and (max-width:576px) {
+    .container{
+        grid-template-areas: 
+        "h"
+        "n"
+        "m"
+        "m"
+        "m"
+        "m"
+        "m"
+        "as"
+        "ad"
+        "f"
+        ;
+       
+       
+    }
+}
+@media screen and (min-width:577px) and (max-width: 700px){
+    .container{ 
+        grid-template-areas: 
+        "h h h h h"
+        "n n n n n"
+        "as as m m m"
+        "ad ad f f f"
+        ;
+     
+    }
+}
